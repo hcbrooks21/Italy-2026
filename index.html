@@ -509,14 +509,18 @@
         <div class="day-header">
           <div class="day-number"><div class="num">13</div><div class="dow">Thu</div></div>
           <div class="day-info">
-            <div class="day-title">Chill Day 😌</div>
-            <div class="day-subtitle">August 13 · Bologna · Work calls</div>
-            <div class="day-pills"><span class="pill">🏡 Rest day</span></div>
+            <div class="day-title">Day Trip: Modena ⭐⭐⭐</div>
+            <div class="day-subtitle">August 13 · Osteria Francescana</div>
+            <div class="day-pills"><span class="pill train">🚂 Train</span><span class="pill special">⭐ Osteria Francescana</span></div>
           </div>
           <div class="chevron">▾</div>
         </div>
         <div class="day-body">
-          <ul class="detail-list"><li>Chill day — local eats and work calls</li></ul>
+          <ul class="detail-list">
+            <li>Train to Modena: TBD</li>
+            <li>12:30 PM — Lunch at Osteria Francescana · 2 guests · ✅ Reserved</li>
+            <li>Train back to Bologna: TBD</li>
+          </ul>
         </div>
       </div>
 
@@ -978,9 +982,38 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    const firstCard = document.querySelector('.day-card');
-    if (firstCard) firstCard.classList.add('open');
+    const correct = 'Italy2026HB';
+    const stored = sessionStorage.getItem('italy_auth');
+    if (stored !== correct) {
+      document.body.innerHTML = `
+        <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:#fafaf8;font-family:'Inter',sans-serif;">
+          <div style="background:white;border:1px solid #e5e7eb;border-radius:16px;padding:40px 48px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,0.08);max-width:360px;width:90%;">
+            <div style="font-size:40px;margin-bottom:12px;">🇮🇹</div>
+            <div style="font-family:'Georgia',serif;font-size:22px;font-weight:700;margin-bottom:6px;">Italy 2026</div>
+            <div style="font-size:13px;color:#9ca3af;margin-bottom:28px;">Enter the password to view the itinerary</div>
+            <input id="pw-input" type="password" placeholder="Password" onkeydown="if(event.key==='Enter')checkPw()" style="width:100%;padding:10px 14px;border:1.5px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none;margin-bottom:10px;box-sizing:border-box;">
+            <div id="pw-error" style="font-size:12px;color:#dc2626;min-height:18px;margin-bottom:8px;"></div>
+            <button onclick="checkPw()" style="width:100%;background:#1a1a2e;color:white;border:none;border-radius:8px;padding:11px;font-size:14px;font-weight:600;cursor:pointer;">Enter</button>
+          </div>
+        </div>`;
+    } else {
+      const firstCard = document.querySelector('.day-card');
+      if (firstCard) firstCard.classList.add('open');
+    }
   });
+
+  function checkPw() {
+    const input = document.getElementById('pw-input').value;
+    if (input === 'Italy2026HB') {
+      sessionStorage.setItem('italy_auth', 'Italy2026HB');
+      location.reload();
+    } else {
+      document.getElementById('pw-error').textContent = 'Incorrect password — try again';
+      document.getElementById('pw-input').value = '';
+      document.getElementById('pw-input').focus();
+    }
+  }
 </script>
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
