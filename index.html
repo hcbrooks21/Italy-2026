@@ -5,1079 +5,1127 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Italy 2026 🇮🇹</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
 
-  :root {
-    --sardinia: #0891b2;
-    --sardinia-light: #e0f7fa;
-    --bologna: #d97706;
-    --bologna-light: #fef3c7;
-    --rome: #dc2626;
-    --rome-light: #fee2e2;
-    --florence: #b45309;
-    --florence-light: #fdf4dc;
-    --chianti: #7c3aed;
-    --chianti-light: #ede9fe;
-    --england: #047857;
-    --england-light: #d1fae5;
-    --sirolo: #0d9488;
-    --sirolo-light: #ccfbf1;
-    --travel: #6b7280;
-    --travel-light: #f3f4f6;
-  }
+ :root {
+ --sardinia: #0891b2;
+ --sardinia-light: #e0f7fa;
+ --bologna: #d97706;
+ --bologna-light: #fef3c7;
+ --rome: #dc2626;
+ --rome-light: #fee2e2;
+ --florence: #b45309;
+ --florence-light: #fdf4dc;
+ --chianti: #7c3aed;
+ --chianti-light: #ede9fe;
+ --england: #047857;
+ --england-light: #d1fae5;
+ --sirolo: #0d9488;
+ --sirolo-light: #ccfbf1;
+ --travel: #6b7280;
+ --travel-light: #f3f4f6;
+ }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Inter', sans-serif; background: #fafaf8; color: #1a1a1a; min-height: 100vh; }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: 'Inter', sans-serif; background: #fafaf8; color: #1a1a1a; min-height: 100vh; }
 
-  /* HEADER */
-  .hero {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
-    color: white; padding: 48px 32px 36px; text-align: center; position: relative; overflow: hidden;
-  }
-  .hero::before {
-    content: ''; position: absolute; inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  }
-  .hero h1 { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; position: relative; }
-  .hero p { font-size: 16px; opacity: 0.75; font-weight: 300; position: relative; }
-  .hero .dates { display: inline-block; margin-top: 16px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 100px; padding: 6px 20px; font-size: 14px; font-weight: 500; position: relative; }
+ /* HEADER */
+ .hero {
+ background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+ color: white; padding: 48px 32px 36px; text-align: center; position: relative; overflow: hidden;
+ }
+ .hero::before {
+ content: ''; position: absolute; inset: 0;
+ background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+ }
+ .hero h1 { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; position: relative; }
+ .hero p { font-size: 16px; opacity: 0.75; font-weight: 300; position: relative; }
+ .hero .dates { display: inline-block; margin-top: 16px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 100px; padding: 6px 20px; font-size: 14px; font-weight: 500; position: relative; }
 
-  /* NAV */
-  .nav { display: flex; gap: 8px; padding: 16px 24px; background: white; border-bottom: 1px solid #e5e7eb; position: sticky; top: 0; z-index: 100; overflow-x: auto; scrollbar-width: none; }
-  .nav::-webkit-scrollbar { display: none; }
-  .nav-btn { flex-shrink: 0; padding: 6px 14px; border-radius: 100px; border: 1.5px solid transparent; font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.15s; white-space: nowrap; background: #f3f4f6; color: #6b7280; }
-  .nav-btn:hover { opacity: 0.85; }
-  .nav-btn.sardinia { background: var(--sardinia-light); color: var(--sardinia); border-color: var(--sardinia); }
-  .nav-btn.bologna { background: var(--bologna-light); color: var(--bologna); border-color: var(--bologna); }
-  .nav-btn.rome { background: var(--rome-light); color: var(--rome); border-color: var(--rome); }
-  .nav-btn.florence { background: var(--florence-light); color: var(--florence); border-color: var(--florence); }
-  .nav-btn.chianti { background: var(--chianti-light); color: var(--chianti); border-color: var(--chianti); }
-  .nav-btn.england { background: var(--england-light); color: var(--england); border-color: var(--england); }
-  .nav-btn.sirolo { background: var(--sirolo-light); color: var(--sirolo); border-color: var(--sirolo); }
+ /* NAV */
+ .nav { display: flex; gap: 8px; padding: 16px 24px; background: white; border-bottom: 1px solid #e5e7eb; position: sticky; top: 0; z-index: 100; overflow-x: auto; scrollbar-width: none; }
+ .nav::-webkit-scrollbar { display: none; }
+ .nav-btn { flex-shrink: 0; padding: 6px 14px; border-radius: 100px; border: 1.5px solid transparent; font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.15s; white-space: nowrap; background: #f3f4f6; color: #6b7280; }
+ .nav-btn:hover { opacity: 0.85; }
+ .nav-btn.sardinia { background: var(--sardinia-light); color: var(--sardinia); border-color: var(--sardinia); }
+ .nav-btn.bologna { background: var(--bologna-light); color: var(--bologna); border-color: var(--bologna); }
+ .nav-btn.rome { background: var(--rome-light); color: var(--rome); border-color: var(--rome); }
+ .nav-btn.florence { background: var(--florence-light); color: var(--florence); border-color: var(--florence); }
+ .nav-btn.chianti { background: var(--chianti-light); color: var(--chianti); border-color: var(--chianti); }
+ .nav-btn.england { background: var(--england-light); color: var(--england); border-color: var(--england); }
+ .nav-btn.sirolo { background: var(--sirolo-light); color: var(--sirolo); border-color: var(--sirolo); }
 
-  /* LEGEND */
-  .legend { display: flex; flex-wrap: wrap; gap: 10px; padding: 16px 24px; background: white; border-bottom: 1px solid #e5e7eb; }
-  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #6b7280; font-weight: 500; }
-  .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+ /* LEGEND */
+ .legend { display: flex; flex-wrap: wrap; gap: 10px; padding: 16px 24px; background: white; border-bottom: 1px solid #e5e7eb; }
+ .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #6b7280; font-weight: 500; }
+ .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
 
-  /* CONTAINER */
-  .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 80px; }
+ /* CONTAINER */
+ .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 80px; }
 
-  /* SECTION HEADERS */
-  .section-header { display: flex; align-items: center; gap: 12px; margin: 40px 0 16px; scroll-margin-top: 80px; }
-  .section-header:first-child { margin-top: 0; }
-  .section-badge { padding: 4px 14px; border-radius: 100px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; }
-  .section-line { flex: 1; height: 1px; background: #e5e7eb; }
-  .section-nights { font-size: 12px; color: #9ca3af; font-weight: 400; white-space: nowrap; }
+ /* SECTION HEADERS */
+ .section-header { display: flex; align-items: center; gap: 12px; margin: 40px 0 16px; scroll-margin-top: 80px; }
+ .section-header:first-child { margin-top: 0; }
+ .section-badge { padding: 4px 14px; border-radius: 100px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; }
+ .section-line { flex: 1; height: 1px; background: #e5e7eb; }
+ .section-nights { font-size: 12px; color: #9ca3af; font-weight: 400; white-space: nowrap; }
 
-  /* SECTION LAYOUT — days + sidebar */
-  .section-layout { display: flex; gap: 16px; align-items: flex-start; }
-  .days-column { flex: 1; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
-  .acc-sidebar { width: 210px; flex-shrink: 0; position: sticky; top: 72px; display: flex; flex-direction: column; gap: 10px; }
+ /* SECTION LAYOUT — days + sidebar */
+ .section-layout { display: flex; gap: 16px; align-items: flex-start; }
+ .days-column { flex: 1; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+ .acc-sidebar { width: 210px; flex-shrink: 0; position: sticky; top: 72px; display: flex; flex-direction: column; gap: 10px; }
 
-  /* ACCOMMODATION BOX */
-  .accommodation-box { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px 14px; }
-  .accommodation-box .acc-header { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #9ca3af; margin-bottom: 7px; }
-  .accommodation-box .acc-name { font-size: 13px; font-weight: 600; color: #1a1a1a; margin-bottom: 5px; line-height: 1.35; }
-  .accommodation-box .acc-detail { font-size: 11.5px; color: #6b7280; line-height: 1.65; }
-  .accommodation-box .acc-detail strong { color: #374151; }
-  .conf-code { display: inline-block; background: #1a1a1a; color: white; font-family: monospace; font-size: 11px; padding: 2px 7px; border-radius: 4px; margin-top: 4px; letter-spacing: 1px; }
+ /* ACCOMMODATION BOX */
+ .accommodation-box { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px 14px; }
+ .accommodation-box .acc-header { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #9ca3af; margin-bottom: 7px; }
+ .accommodation-box .acc-name { font-size: 13px; font-weight: 600; color: #1a1a1a; margin-bottom: 5px; line-height: 1.35; }
+ .accommodation-box .acc-detail { font-size: 11.5px; color: #6b7280; line-height: 1.65; }
+ .accommodation-box .acc-detail strong { color: #374151; }
+ .conf-code { display: inline-block; background: #1a1a1a; color: white; font-family: monospace; font-size: 11px; padding: 2px 7px; border-radius: 4px; margin-top: 4px; letter-spacing: 1px; }
 
-  /* DAY CARDS */
-  .day-card { background: white; border-radius: 12px; border: 1px solid #e5e7eb; overflow: hidden; transition: box-shadow 0.15s; }
-  .day-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
-  .day-card.sardinia { border-left: 4px solid var(--sardinia); }
-  .day-card.bologna { border-left: 4px solid var(--bologna); }
-  .day-card.rome { border-left: 4px solid var(--rome); }
-  .day-card.florence { border-left: 4px solid var(--florence); }
-  .day-card.chianti { border-left: 4px solid var(--chianti); }
-  .day-card.england { border-left: 4px solid var(--england); }
-  .day-card.sirolo { border-left: 4px solid var(--sirolo); }
-  .day-card.travel { border-left: 4px solid var(--travel); }
+ /* DAY CARDS */
+ .day-card { background: white; border-radius: 12px; border: 1px solid #e5e7eb; overflow: hidden; transition: box-shadow 0.15s; }
+ .day-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+ .day-card.sardinia { border-left: 4px solid var(--sardinia); }
+ .day-card.bologna { border-left: 4px solid var(--bologna); }
+ .day-card.rome { border-left: 4px solid var(--rome); }
+ .day-card.florence { border-left: 4px solid var(--florence); }
+ .day-card.chianti { border-left: 4px solid var(--chianti); }
+ .day-card.england { border-left: 4px solid var(--england); }
+ .day-card.sirolo { border-left: 4px solid var(--sirolo); }
+ .day-card.travel { border-left: 4px solid var(--travel); }
 
-  .day-header { display: flex; align-items: flex-start; gap: 14px; padding: 14px 16px; cursor: pointer; user-select: none; }
-  .day-number { min-width: 42px; text-align: center; }
-  .day-number .num { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; line-height: 1; color: #1a1a1a; }
-  .day-number .dow { font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; color: #9ca3af; font-weight: 600; }
-  .day-info { flex: 1; }
-  .day-title { font-size: 15px; font-weight: 600; color: #1a1a1a; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .day-subtitle { font-size: 13px; color: #6b7280; margin-top: 3px; }
-  .day-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
-  .pill { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 100px; font-size: 11px; font-weight: 500; }
-  .pill.flight { background: #dbeafe; color: #1d4ed8; }
-  .pill.train { background: #f3e8ff; color: #7e22ce; }
-  .pill.boat { background: #cffafe; color: #0e7490; }
-  .pill.activity { background: #dcfce7; color: #15803d; }
-  .pill.food { background: #fff7ed; color: #c2410c; }
-  .pill.special { background: #fce7f3; color: #be185d; }
-  .pill.todo { background: #fef9c3; color: #a16207; }
-  .pill.car { background: #f1f5f9; color: #475569; }
-  .chevron { color: #d1d5db; font-size: 18px; transition: transform 0.2s; align-self: center; flex-shrink: 0; }
-  .day-card.open .chevron { transform: rotate(180deg); }
+ .day-header { display: flex; align-items: flex-start; gap: 14px; padding: 14px 16px; cursor: pointer; user-select: none; }
+ .day-number { min-width: 42px; text-align: center; }
+ .day-number .num { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; line-height: 1; color: #1a1a1a; }
+ .day-number .dow { font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; color: #9ca3af; font-weight: 600; }
+ .day-info { flex: 1; }
+ .day-title { font-size: 15px; font-weight: 600; color: #1a1a1a; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+ .day-subtitle { font-size: 13px; color: #6b7280; margin-top: 3px; }
+ .day-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+ .pill { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 100px; font-size: 11px; font-weight: 500; }
+ .pill.flight { background: #dbeafe; color: #1d4ed8; }
+ .pill.train { background: #f3e8ff; color: #7e22ce; }
+ .pill.boat { background: #cffafe; color: #0e7490; }
+ .pill.activity { background: #dcfce7; color: #15803d; }
+ .pill.food { background: #fff7ed; color: #c2410c; }
+ .pill.special { background: #fce7f3; color: #be185d; }
+ .pill.todo { background: #fef9c3; color: #a16207; }
+ .pill.car { background: #f1f5f9; color: #475569; }
+ .chevron { color: #d1d5db; font-size: 18px; transition: transform 0.2s; align-self: center; flex-shrink: 0; }
+ .day-card.open .chevron { transform: rotate(180deg); }
 
-  /* EXPANDED CONTENT */
-  .day-body { display: none; padding: 0 16px 16px 72px; border-top: 1px solid #f3f4f6; }
-  .day-card.open .day-body { display: block; }
-  .detail-section { margin-top: 12px; }
-  .detail-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700; color: #9ca3af; margin-bottom: 6px; }
-  .detail-list { list-style: none; }
-  .detail-list li { font-size: 13px; color: #374151; padding: 3px 0; display: flex; gap: 8px; align-items: flex-start; }
-  .detail-list li::before { content: '·'; color: #d1d5db; font-size: 18px; line-height: 1.1; flex-shrink: 0; }
+ /* EXPANDED CONTENT */
+ .day-body { display: none; padding: 0 16px 16px 72px; border-top: 1px solid #f3f4f6; }
+ .day-card.open .day-body { display: block; }
+ .detail-section { margin-top: 12px; }
+ .detail-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700; color: #9ca3af; margin-bottom: 6px; }
+ .detail-list { list-style: none; }
+ .detail-list li { font-size: 13px; color: #374151; padding: 3px 0; display: flex; gap: 8px; align-items: flex-start; }
+ .detail-list li::before { content: '·'; color: #d1d5db; font-size: 18px; line-height: 1.1; flex-shrink: 0; }
 
-  /* NOTES */
-  .note-box { margin-top: 10px; background: #fefce8; border: 1px solid #fde68a; border-radius: 6px; padding: 8px 12px; font-size: 12px; color: #713f12; display: flex; gap: 6px; align-items: flex-start; }
+ /* NOTES */
 
-  /* OVERVIEW CARDS */
-  .overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; margin-bottom: 40px; }
-  .overview-card { background: white; border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px 16px; text-align: center; }
-  .overview-card .ov-num { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; line-height: 1; }
-  .overview-card .ov-label { font-size: 12px; color: #9ca3af; margin-top: 4px; font-weight: 500; }
 
-  /* RESPONSIVE */
-  @media (max-width: 680px) {
-    .hero h1 { font-size: 30px; }
-    .section-layout { flex-direction: column; }
-    .acc-sidebar { width: 100%; position: static; flex-direction: row; flex-wrap: wrap; }
-    .accommodation-box { flex: 1; min-width: 200px; }
-    .day-body { padding-left: 16px; }
-    .overview-grid { grid-template-columns: repeat(3, 1fr); }
-  }
+ .conf-code-hidden {
+ display: inline-block;
+ cursor: pointer;
+ font-size: 11px;
+ font-family: monospace;
+ background: #f1f5f9;
+ border: 1px dashed #cbd5e1;
+ border-radius: 6px;
+ padding: 1px 8px;
+ color: #94a3b8;
+ user-select: none;
+ }
+ .conf-code-hidden:hover { background: #e2e8f0; color: #475569; }
+ .conf-code-hidden .code-revealed { display: none; color: #1e3a5f; font-weight: 600; }
+ .conf-code-hidden.revealed .code-label { display: none; }
+ .conf-code-hidden.revealed .code-revealed { display: inline; }
+ .conf-code-hidden.revealed { background: #dbeafe; border-color: #93c5fd; color: #1e40af; }
+ .dist-badge {
+ display: inline-block;
+ font-size: 10.5px;
+ font-weight: 600;
+ color: #0369a1;
+ background: #e0f2fe;
+ padding: 1px 7px 1px 5px;
+ border-radius: 10px;
+ margin-left: 6px;
+ white-space: nowrap;
+ vertical-align: middle;
+ }
+ .note-box { margin-top: 10px; background: #fefce8; border: 1px solid #fde68a; border-radius: 6px; padding: 8px 12px; font-size: 12px; color: #713f12; display: flex; gap: 6px; align-items: flex-start; }
+
+ /* OVERVIEW CARDS */
+ .overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; margin-bottom: 40px; }
+ .overview-card { background: white; border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px 16px; text-align: center; }
+ .overview-card .ov-num { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; line-height: 1; }
+ .overview-card .ov-label { font-size: 12px; color: #9ca3af; margin-top: 4px; font-weight: 500; }
+
+ /* RESPONSIVE */
+ @media (max-width: 680px) {
+ .hero h1 { font-size: 30px; }
+ .section-layout { flex-direction: column; }
+ .acc-sidebar { width: 100%; position: static; flex-direction: row; flex-wrap: wrap; }
+ .accommodation-box { flex: 1; min-width: 200px; }
+ .day-body { padding-left: 16px; }
+ .overview-grid { grid-template-columns: repeat(3, 1fr); }
+ }
 </style>
 </head>
 <body>
 
 <div class="hero">
-  <h1>🇮🇹 Italy 2026</h1>
-  <p>An Italian Adventure</p>
-  <div class="dates">August 2 – 30, 2026 &nbsp;·&nbsp; 29 nights</div>
+ <h1>🇮🇹 Italy 2026</h1>
+ <p>An Italian Adventure</p>
+ <div class="dates">August 2 – 30, 2026 &nbsp;·&nbsp; 29 nights</div>
 </div>
 
 <nav class="nav">
-  <button class="nav-btn" onclick="scrollToSection('travel-out')">✈️ Outbound</button>
-  <button class="nav-btn sardinia" onclick="scrollToSection('sardinia')">🏖️ Sardinia</button>
-  <button class="nav-btn bologna" onclick="scrollToSection('bologna')">🍝 Bologna</button>
-  <button class="nav-btn sirolo" onclick="scrollToSection('sirolo')">🏖️ Sirolo</button>
-  <button class="nav-btn rome" onclick="scrollToSection('rome')">🏛️ Rome</button>
-  <button class="nav-btn florence" onclick="scrollToSection('florence')">🌸 Florence</button>
-  <button class="nav-btn chianti" onclick="scrollToSection('chianti')">🍷 Chianti</button>
-  <button class="nav-btn england" onclick="scrollToSection('england')">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</button>
-  <button class="nav-btn" onclick="scrollToSection('travel-home')">✈️ Home</button>
+ <button class="nav-btn" onclick="scrollToSection('travel-out')">✈️ Outbound</button>
+ <button class="nav-btn sardinia" onclick="scrollToSection('sardinia')">🏖️ Sardinia</button>
+ <button class="nav-btn bologna" onclick="scrollToSection('bologna')">🍝 Bologna</button>
+ <button class="nav-btn sirolo" onclick="scrollToSection('sirolo')">🏖️ Sirolo</button>
+ <button class="nav-btn rome" onclick="scrollToSection('rome')">🏛️ Rome</button>
+ <button class="nav-btn florence" onclick="scrollToSection('florence')">🌸 Florence</button>
+ <button class="nav-btn chianti" onclick="scrollToSection('chianti')">🍷 Chianti</button>
+ <button class="nav-btn england" onclick="scrollToSection('england')">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</button>
+ <button class="nav-btn" onclick="scrollToSection('travel-home')">✈️ Home</button>
 </nav>
 
 <div class="legend">
-  <div class="legend-item"><div class="legend-dot" style="background:var(--sardinia)"></div> Sardinia</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--sirolo)"></div> Sirolo</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--bologna)"></div> Bologna</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--rome)"></div> Rome</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--florence)"></div> Florence</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--chianti)"></div> Chianti</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--england)"></div> England</div>
-  <div class="legend-item"><div class="legend-dot" style="background:#9ca3af"></div> Travel</div>
+ <div class="legend-item"><div class="legend-dot" style="background:var(--sardinia)"></div> Sardinia</div>
+ <div class="legend-item"><div class="legend-dot" style="background:var(--sirolo)"></div> Sirolo</div>
+ <div class="legend-item"><div class="legend-dot" style="background:var(--bologna)"></div> Bologna</div>
+ <div class="legend-item"><div class="legend-dot" style="background:var(--rome)"></div> Rome</div>
+ <div class="legend-item"><div class="legend-dot" style="background:var(--florence)"></div> Florence</div>
+ <div class="legend-item"><div class="legend-dot" style="background:var(--chianti)"></div> Chianti</div>
+ <div class="legend-item"><div class="legend-dot" style="background:var(--england)"></div> England</div>
+ <div class="legend-item"><div class="legend-dot" style="background:#9ca3af"></div> Travel</div>
 </div>
 
 <div class="container">
 
-    <!-- OVERVIEW -->
-  <div class="overview-grid">
-    <div class="overview-card"><div class="ov-num" style="color:var(--sardinia)">7</div><div class="ov-label">Nights in Sardinia</div></div>
-    <div class="overview-card"><div class="ov-num" style="color:var(--bologna)">5</div><div class="ov-label">Nights in Bologna</div></div>
-    <div class="overview-card"><div class="ov-num" style="color:var(--sirolo)">3</div><div class="ov-label">Nights in Sirolo</div></div>
-    <div class="overview-card"><div class="ov-num" style="color:var(--rome)">3</div><div class="ov-label">Nights in Rome</div></div>
-    <div class="overview-card"><div class="ov-num" style="color:var(--florence)">3</div><div class="ov-label">Nights in Florence</div></div>
-    <div class="overview-card"><div class="ov-num" style="color:var(--chianti)">4</div><div class="ov-label">Nights in Chianti</div></div>
-    <div class="overview-card"><div class="ov-num" style="color:var(--england)">2</div><div class="ov-label">Nights in England</div></div>
-  </div>
+ <!-- OVERVIEW -->
+ <div class="overview-grid">
+ <div class="overview-card"><div class="ov-num" style="color:var(--sardinia)">7</div><div class="ov-label">Nights in Sardinia</div></div>
+ <div class="overview-card"><div class="ov-num" style="color:var(--bologna)">5</div><div class="ov-label">Nights in Bologna</div></div>
+ <div class="overview-card"><div class="ov-num" style="color:var(--sirolo)">3</div><div class="ov-label">Nights in Sirolo</div></div>
+ <div class="overview-card"><div class="ov-num" style="color:var(--rome)">3</div><div class="ov-label">Nights in Rome</div></div>
+ <div class="overview-card"><div class="ov-num" style="color:var(--florence)">3</div><div class="ov-label">Nights in Florence</div></div>
+ <div class="overview-card"><div class="ov-num" style="color:var(--chianti)">4</div><div class="ov-label">Nights in Chianti</div></div>
+ <div class="overview-card"><div class="ov-num" style="color:var(--england)">2</div><div class="ov-label">Nights in England</div></div>
+ </div>
 
-  <!-- ======= OUTBOUND ======= -->
-  <div class="section-header" id="travel-out">
-    <div class="section-badge" style="background:#f3f4f6;color:#6b7280;">Travel</div>
-    <div class="section-line"></div>
-  </div>
-  <div class="section-layout">
-    <div class="days-column">
-      <div class="day-card travel" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">2</div><div class="dow">Sun</div></div>
-          <div class="day-info">
-            <div class="day-title">Depart Boston ✈️</div>
-            <div class="day-subtitle">August 2 · Boston → Rome</div>
-            <div class="day-pills"><span class="pill flight">✈️ DL 112</span><span class="pill">Delta Premium Select</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <div class="detail-section">
-            <div class="detail-label">Schedule</div>
-            <ul class="detail-list">
-              <li>1:30 PM — Arrive at Logan Airport</li>
-              <li>4:50 PM — Depart BOS (Delta DL 112, Premium Select)</li>
-              <li>Red-eye overnight to Rome (FCO)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="acc-sidebar"><!-- no accommodation for travel day --></div>
-  </div>
+ <!-- ======= OUTBOUND ======= -->
+ <div class="section-header" id="travel-out">
+ <div class="section-badge" style="background:#f3f4f6;color:#6b7280;">Travel</div>
+ <div class="section-line"></div>
+ </div>
+ <div class="section-layout">
+ <div class="days-column">
+ <div class="day-card travel" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">2</div><div class="dow">Sun</div></div>
+ <div class="day-info">
+ <div class="day-title">Depart Boston ✈️</div>
+ <div class="day-subtitle">August 2 · Boston → Rome</div>
+ <div class="day-pills"><span class="pill flight">✈️ DL 112</span><span class="pill">Delta Premium Select</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <div class="detail-section">
+ <div class="detail-label">Schedule</div>
+ <ul class="detail-list">
+ <li>1:30 PM — Arrive at Logan Airport</li>
+ <li>4:50 PM — Depart BOS (Delta DL 112, Premium Select)</li>
+ <li>Red-eye overnight to Rome (FCO)</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="acc-sidebar"><!-- no accommodation for travel day --></div>
+ </div>
 
-  <!-- ======= SARDINIA ======= -->
-  <div class="section-header" id="sardinia">
-    <div class="section-badge" style="background:var(--sardinia-light);color:var(--sardinia);">🏖️ Sardinia</div>
-    <div class="section-line"></div>
-    <div class="section-nights">Aug 3–9 · 7 nights</div>
-  </div>
-  <div class="section-layout">
-    <div class="days-column">
+ <!-- ======= SARDINIA ======= -->
+ <div class="section-header" id="sardinia">
+ <div class="section-badge" style="background:var(--sardinia-light);color:var(--sardinia);">🏖️ Sardinia</div>
+ <div class="section-line"></div>
+ <div class="section-nights">Aug 3–9 · 7 nights</div>
+ </div>
+ <div class="section-layout">
+ <div class="days-column">
 
-      <div class="day-card sardinia" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">3</div><div class="dow">Mon</div></div>
-          <div class="day-info">
-            <div class="day-title">Arrive Rome → Sardinia ✈️</div>
-            <div class="day-subtitle">August 3 · Travel day → Cannigione</div>
-            <div class="day-pills"><span class="pill flight">✈️ FCO→OLB</span><span class="pill car">🚗 Rental Car</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <div class="detail-section">
-            <div class="detail-label">Schedule</div>
-            <ul class="detail-list">
-              <li>6:50 AM — Arrive Rome (FCO)</li>
-              <li>11:30 AM — Aeroitalia flight FCO → OLB</li>
-              <li>12:30 PM — Land in Olbia, Sardinia</li>
-              <li>1:00 PM — Pick up rental car at OLB Airport</li>
-              <li>~45 min drive to Cannigione</li>
-              <li>3:00 PM — Check in to Airbnb</li>
-            </ul>
-          </div>
-          <div class="detail-section">
-            <div class="detail-label">Evening</div>
-            <ul class="detail-list">
-              <li>Chill, walk around Cannigione town</li>
-              <li>🍷 Wine bar stop at Enoteca La Bottega del Gusto</li>
-              <li>7:30 PM — Dinner at <a href="https://acquamarinaboatrestaurant.it/en/menu/menu" target="_blank" style="color:inherit">Acquamarina Trattoria de Mare</a> (boat restaurant) · Nora made reservation ✓</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+ <div class="day-card sardinia" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">3</div><div class="dow">Mon</div></div>
+ <div class="day-info">
+ <div class="day-title">Arrive Rome → Sardinia ✈️</div>
+ <div class="day-subtitle">August 3 · Travel day → Cannigione</div>
+ <div class="day-pills"><span class="pill flight">✈️ FCO→OLB</span><span class="pill car">🚗 Rental Car</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <div class="detail-section">
+ <div class="detail-label">Schedule</div>
+ <ul class="detail-list">
+ <li>6:50 AM — Arrive Rome (FCO)</li>
+ <li>11:30 AM — Aeroitalia flight FCO → OLB</li>
+ <li>12:30 PM — Land in Olbia, Sardinia</li>
+ <li>1:00 PM — Pick up rental car at OLB Airport</li>
+ <li>~45 min drive to Cannigione</li>
+ <li>3:00 PM — Check in to Airbnb</li>
+ </ul>
+ </div>
+ <div class="detail-section">
+ <div class="detail-label">Evening</div>
+ <ul class="detail-list">
+ <li>Chill, walk around Cannigione town</li>
+ <li>🍷 Wine bar stop at Enoteca La Bottega del Gusto</li>
+ <li>7:30 PM — Dinner at <a href="https://acquamarinaboatrestaurant.it/en/menu/menu" target="_blank" style="color:inherit">Acquamarina Trattoria de Mare</a> (boat restaurant) <span class="dist-badge">📍 ~5 min walk</span></li>
+ </ul>
+ </div>
+ </div>
+ </div>
 
-      <div class="day-card sardinia" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">4</div><div class="dow">Tue</div></div>
-          <div class="day-info">
-            <div class="day-title">Beach Day + Welcome Dinner 🏖️</div>
-            <div class="day-subtitle">August 4 · Cannigione · Agriturismo La Colti</div>
-            <div class="day-pills"><span class="pill activity">🏖️ Beach</span><span class="pill food">🍽️ Agriturismo</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <div class="detail-section">
-            <div class="detail-label">Morning</div>
-            <ul class="detail-list">
-              <li>☕ Breakfast at Caffè De Solle (20 min walk)</li>
-              <li>🛒 Stop at Sardinia Bakery for groceries</li>
-            </ul>
-          </div>
-          <div class="detail-section">
-            <div class="detail-label">Afternoon</div>
-            <ul class="detail-list">
-              <li>🏖️ Beach day at Spiaggia di Cannigione (10 min walk)</li>
-            </ul>
-          </div>
-          <div class="detail-section">
-            <div class="detail-label">Evening</div>
-            <ul class="detail-list">
-              <li>7:30 PM — Leave for La Colti (6 min drive)</li>
-              <li>8:00 PM — Welcome dinner at Agriturismo La Colti · farm-to-table (6 min drive) · <a href="https://www.lacolti.it/en/" target="_blank" style="color:inherit">lacolti.it</a></li>
-            </ul>
-          </div>
-          <div class="note-box">⚠️ Reservation needed — book via WhatsApp</div>
-        </div>
-      </div>
+ <div class="day-card sardinia" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">4</div><div class="dow">Tue</div></div>
+ <div class="day-info">
+ <div class="day-title">Beach Day + Welcome Dinner 🏖️</div>
+ <div class="day-subtitle">August 4 · Cannigione · Agriturismo La Colti</div>
+ <div class="day-pills"><span class="pill activity">🏖️ Beach</span><span class="pill food">🍽️ Agriturismo</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <div class="detail-section">
+ <div class="detail-label">Morning</div>
+ <ul class="detail-list">
+ <li>☕ Breakfast at Caffè De Solle <span class="dist-badge">📍 ~20 min walk</span></li>
+ <li>🛒 Stop at Sardinia Bakery for groceries</li>
+ </ul>
+ </div>
+ <div class="detail-section">
+ <div class="detail-label">Afternoon</div>
+ <ul class="detail-list">
+ <li>🏖️ Beach day at Spiaggia di Cannigione <span class="dist-badge">📍 ~10 min walk</span></li>
+ </ul>
+ </div>
+ <div class="detail-section">
+ <div class="detail-label">Evening</div>
+ <ul class="detail-list">
+ <li>7:30 PM — Leave for La Colti <span class="dist-badge">📍 ~6 min drive</span></li>
+ <li>8:00 PM — Welcome dinner at Agriturismo La Colti · farm-to-table <span class="dist-badge">📍 ~6 min drive</span></li>
+ </ul>
+ </div>
+ <div class="note-box">⚠️ Reservation needed — book via WhatsApp</div>
+ </div>
+ </div>
 
-      <div class="day-card sardinia" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">5</div><div class="dow">Wed</div></div>
-          <div class="day-info">
-            <div class="day-title">Boat Day #1 — Maddalena Islands ⛵</div>
-            <div class="day-subtitle">August 5 · Captain Emily · 8 hrs</div>
-            <div class="day-pills"><span class="pill boat">⛵ Boat Day</span><span class="pill special">✅ Nora booked</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <div class="detail-section">
-            <div class="detail-label">Day</div>
-            <ul class="detail-list">
-              <li>9:00 AM — Leave airbnb (15 min walk to meeting point)</li>
-              <li>10:00 AM – 6:30 PM — Boat day with Captain Emily · <a href="https://www.airbnb.com/experiences/3726380" target="_blank" style="color:inherit">Airbnb Experience</a> · Nora booked ✓</li>
-            </ul>
-          </div>
-          <div class="detail-section">
-            <div class="detail-label">Evening</div>
-            <ul class="detail-list">
-              <li>🍷 Wine at Enoteca La Bottega del Gusto</li>
-              <li>🍕 Dinner at Pizzeria da Serafino e Giovanni</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+ <div class="day-card sardinia" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">5</div><div class="dow">Wed</div></div>
+ <div class="day-info">
+ <div class="day-title">Boat Day #1 — Maddalena Islands ⛵</div>
+ <div class="day-subtitle">August 5 · Captain Emily · 8 hrs</div>
+ <div class="day-pills"><span class="pill boat">⛵ Boat Day</span><span class="pill special"> </span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <div class="detail-section">
+ <div class="detail-label">Day</div>
+ <ul class="detail-list">
+ <li>9:00 AM — Leave airbnb · Boat meeting point <span class="dist-badge">📍 ~15 min walk</span></li>
+ <li>10:00 AM – 6:30 PM — Boat day with Captain Emily · <a href="https://www.airbnb.com/experiences/3726380" target="_blank" style="color:inherit">Airbnb Experience</a></li>
+ </ul>
+ </div>
+ <div class="detail-section">
+ <div class="detail-label">Evening</div>
+ <ul class="detail-list">
+ <li>🍷 Wine at Enoteca La Bottega del Gusto</li>
+ <li>🍕 Dinner at Pizzeria da Serafino e Giovanni</li>
+ </ul>
+ </div>
+ </div>
+ </div>
 
-      <div class="day-card sardinia" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">6</div><div class="dow">Thu</div></div>
-          <div class="day-info">
-            <div class="day-title">Nikki Beach Club ☀️</div>
-            <div class="day-subtitle">August 6 · Costa Smeralda</div>
-            <div class="day-pills"><span class="pill activity">🏖️ Beach Club</span><span class="pill special">✅ Nora booked</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>10:00 AM — Drive or taxi to Nikki Beach Club shuttle pickup (30 min drive)</li>
-            <li>11:00 AM — Sun loungers at Nikki Beach · Nora booked ✓</li>
-          </ul>
-          <div class="note-box">⚠️ Get confirmation number from Nora</div>
-        </div>
-      </div>
+ <div class="day-card sardinia" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">6</div><div class="dow">Thu</div></div>
+ <div class="day-info">
+ <div class="day-title">Nikki Beach Club ☀️</div>
+ <div class="day-subtitle">August 6 · Costa Smeralda</div>
+ <div class="day-pills"><span class="pill activity">🏖️ Beach Club</span><span class="pill special"> </span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>10:00 AM — Drive or taxi to Nikki Beach Club shuttle pickup <span class="dist-badge">📍 ~30 min drive</span></li>
+ <li>11:00 AM — Sun loungers at Nikki Beach</li>
+ </ul>
+ <div class="note-box">⚠️ Get confirmation number from Nora</div>
+ </div>
+ </div>
 
-      <div class="day-card sardinia" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">7</div><div class="dow">Fri</div></div>
-          <div class="day-info">
-            <div class="day-title">Culture + Wine + Sunset Dinner 🍷</div>
-            <div class="day-subtitle">August 7 · Ruins · Capichera Vineyard · Le Terrazzee</div>
-            <div class="day-pills"><span class="pill activity">🏛️ Ruins</span><span class="pill food">🍷 Wine Tasting</span><span class="pill food">🌅 Sunset Dinner</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <div class="detail-section">
-            <div class="detail-label">Morning</div>
-            <ul class="detail-list">
-              <li>🏛️ Visit Nuraghe La Prisgiona Ruins (20 min drive)</li>
-              <li>12:00 PM — Wine tasting at <a href="https://www.capichera.it/en/degustazioni/?v=ec14f7a6cc4a" target="_blank" style="color:inherit">Capichera Vineyard</a></li>
-            </ul>
-          </div>
-          <div class="detail-section">
-            <div class="detail-label">Afternoon / Evening</div>
-            <ul class="detail-list">
-              <li>Back to airbnb — relax</li>
-              <li>Optional: stop in Arzachena on the way back — Mushroom Rock (Roccia del Fungo) + Scalinata di Santa</li>
-            <li>8:30 PM — Uber or taxi to Le Terrazzee (20 min drive)</li>
-              <li>10:30 PM — Dinner at <a href="https://ritual.it/en/le-terrazze-ritual/" target="_blank" style="color:inherit">Le Terrazzee</a> for sunset</li>
-              <li>🎉 Hit Ritual Club after? TBD</li>
-            </ul>
-          </div>
-          <div class="note-box">✅ Reservation confirmed — Nora booked</div>
-        </div>
-      </div>
+ <div class="day-card sardinia" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">7</div><div class="dow">Fri</div></div>
+ <div class="day-info">
+ <div class="day-title">Culture + Wine + Sunset Dinner 🍷</div>
+ <div class="day-subtitle">August 7 · Ruins · Capichera Vineyard · Le Terrazzee</div>
+ <div class="day-pills"><span class="pill activity">🏛️ Ruins</span><span class="pill food">🍷 Wine Tasting</span><span class="pill food">🌅 Sunset Dinner</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <div class="detail-section">
+ <div class="detail-label">Morning</div>
+ <ul class="detail-list">
+ <li>🏛️ Visit Nuraghe La Prisgiona Ruins <span class="dist-badge">📍 ~20 min drive</span></li>
+ <li>12:00 PM — Wine tasting at <a href="https://www.capichera.it/en/degustazioni/?v=ec14f7a6cc4a" target="_blank" style="color:inherit">Capichera Vineyard</a> <span class="dist-badge">📍 ~15 min drive</span></li>
+ </ul>
+ </div>
+ <div class="detail-section">
+ <div class="detail-label">Afternoon / Evening</div>
+ <ul class="detail-list">
+ <li>Back to airbnb — relax</li>
+ <li>Optional: stop in Arzachena on the way back — Mushroom Rock (Roccia del Fungo) + Scalinata di Santa</li>
+ <li>8:30 PM — Uber or taxi to Le Terrazzee <span class="dist-badge">📍 ~20 min drive</span></li>
+ <li>10:30 PM — Dinner at <a href="https://ritual.it/en/le-terrazze-ritual/" target="_blank" style="color:inherit">Le Terrazzee</a> for sunset</li>
+ <li>🎉 Hit Ritual Club after? TBD</li>
+ </ul>
+ </div>
+ <div class="note-box"> Reservation confirmed — </div>
+ </div>
+ </div>
 
-      <div class="day-card sardinia" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">8</div><div class="dow">Sat</div></div>
-          <div class="day-info">
-            <div class="day-title">Phi Beach + Jimmy Sax 🎷</div>
-            <div class="day-subtitle">August 8 · Relaxing beach day · Phi Beach Club at night</div>
-            <div class="day-pills"><span class="pill activity">🌅 Phi Beach</span><span class="pill special">🎷 Jimmy Sax · Nora bought tickets ✅</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <div class="detail-section">
-            <div class="detail-label">Day</div>
-            <ul class="detail-list">
-              <li>Open day — relax, beach TBD</li>
-            </ul>
-          </div>
-          <div class="detail-section">
-            <div class="detail-label">Evening</div>
-            <ul class="detail-list">
-              <li>8:00 PM — Phi Beach Club · <a href="https://phibeach.com/pages/book-restaurants" target="_blank" style="color:inherit">phibeach.com</a></li>
-              <li>🎷 Jimmy Sax concert (6 PM – 3 AM) · Nora bought tickets ✓</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+ <div class="day-card sardinia" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">8</div><div class="dow">Sat</div></div>
+ <div class="day-info">
+ <div class="day-title">Phi Beach + Jimmy Sax 🎷</div>
+ <div class="day-subtitle">August 8 · Relaxing beach day · Phi Beach Club at night</div>
+ <div class="day-pills"><span class="pill activity">🌅 Phi Beach</span><span class="pill special">🎷 Jimmy Sax</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <div class="detail-section">
+ <div class="detail-label">Day</div>
+ <ul class="detail-list">
+ <li>Open day — relax, beach TBD</li>
+ </ul>
+ </div>
+ <div class="detail-section">
+ <div class="detail-label">Evening</div>
+ <ul class="detail-list">
+ <li>8:00 PM — Phi Beach Club · <a href="https://phibeach.com/pages/book-restaurants" target="_blank" style="color:inherit">phibeach.com</a> <span class="dist-badge">📍 ~20 min drive</span></li>
+ <li>🎷 Jimmy Sax concert (6 PM – 3 AM)</li>
+ </ul>
+ </div>
+ </div>
+ </div>
 
-      <div class="day-card sardinia" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">9</div><div class="dow">Sun</div></div>
-          <div class="day-info">
-            <div class="day-title">Last Day — TBD 🌞</div>
-            <div class="day-subtitle">August 9 · Cannigione · Last day in Sardinia!</div>
-            <div class="day-pills"><span class="pill">🏖️ TBD</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>Options: Beach Club · Boat Day · Explore Porto Cervo</li>
-            <li>TBD — last day, go with the flow! 🌊</li>
-          </ul>
-          <div class="note-box">⚠️ Check-out tomorrow at 10:00 AM — pack tonight</div>
-        </div>
-      </div>
+ <div class="day-card sardinia" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">9</div><div class="dow">Sun</div></div>
+ <div class="day-info">
+ <div class="day-title">Last Day — TBD 🌞</div>
+ <div class="day-subtitle">August 9 · Cannigione · Last day in Sardinia!</div>
+ <div class="day-pills"><span class="pill">🏖️ TBD</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>Options: Beach Club · Boat Day · Explore Porto Cervo</li>
+ <li>TBD — last day, go with the flow! 🌊</li>
+ </ul>
+ <div class="note-box">⚠️ Check-out tomorrow at 10:00 AM — pack tonight</div>
+ </div>
+ </div>
 
-    </div><!-- end days-column -->
-    <div class="acc-sidebar">
-      <div class="accommodation-box">
-        <div class="acc-header">🏠 Airbnb — Cannigione</div>
-        <div class="acc-name">Blu Home · Via Le Maree, 26, Arzachena</div>
-        <div class="acc-detail">
-          Check-in: <strong>3 PM, Aug 3</strong><br>
-          Check-out: <strong>10 AM, Aug 10</strong><br>
-          Host: <strong>+39 349 82 00 279</strong><br>
-          Cancel free before Jul 29<br>
-          <span class="conf-code">HMFM5XJXPW</span>
-        </div>
-      </div>
-      <div class="accommodation-box">
-        <div class="acc-header">🚗 Car Rental — OLB</div>
-        <div class="acc-name">Via Degli Astronauti, Olbia</div>
-        <div class="acc-detail">
-          Pick-up: <strong>Aug 3, 1 PM</strong><br>
-          Drop-off: <strong>Aug 10, 2 PM</strong><br>
-          <span class="conf-code">#73464379422431</span>
-        </div>
-      </div>
-    </div>
-  </div>
+ </div><!-- end days-column -->
+ <div class="acc-sidebar">
+ <div class="accommodation-box">
+ <div class="acc-header">🏠 Airbnb — Cannigione</div>
+ <div class="acc-name">Blu Home · Via Le Maree, 26, Arzachena</div>
+ <div class="acc-detail">
+ Check-in: <strong>3 PM, Aug 3</strong><br>
+ Check-out: <strong>10 AM, Aug 10</strong><br>
+ Host: <strong>+39 349 82 00 279</strong><br>
+ Cancel free before Jul 29<br>
+ <span class="conf-code">HMFM5XJXPW</span>
+ </div>
+ </div>
+ <div class="accommodation-box">
+ <div class="acc-header">🚗 Car Rental — OLB</div>
+ <div class="acc-name">Via Degli Astronauti, Olbia</div>
+ <div class="acc-detail">
+ Pick-up: <strong>Aug 3, 1 PM</strong><br>
+ Drop-off: <strong>Aug 10, 2 PM</strong><br>
+ <span class="conf-code">#73464379422431</span>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <!-- ======= BOLOGNA ======= -->
-  <div class="section-header" id="bologna">
-    <div class="section-badge" style="background:var(--bologna-light);color:var(--bologna);">🍝 Bologna</div>
-    <div class="section-line"></div>
-    <div class="section-nights">Aug 10–14 · 5 nights</div>
-  </div>
-  <div class="section-layout">
-    <div class="days-column">
+ <!-- ======= BOLOGNA ======= -->
+ <div class="section-header" id="bologna">
+ <div class="section-badge" style="background:var(--bologna-light);color:var(--bologna);">🍝 Bologna</div>
+ <div class="section-line"></div>
+ <div class="section-nights">Aug 10–14 · 5 nights</div>
+ </div>
+ <div class="section-layout">
+ <div class="days-column">
 
-      <div class="day-card bologna" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">10</div><div class="dow">Mon</div></div>
-          <div class="day-info">
-            <div class="day-title">Sardinia → Bologna ✈️</div>
-            <div class="day-subtitle">August 10 · Travel day</div>
-            <div class="day-pills"><span class="pill flight">✈️ OLB→BLQ</span><span class="pill food">🍸 Il Calice</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <div class="detail-section">
-            <div class="detail-label">Schedule</div>
-            <ul class="detail-list">
-              <li>Check out of Sardinia Airbnb (10:00 AM)</li>
-              <li>🛒 Visit Cannigione Market on the way out</li>
-              <li>Drop off rental car at OLB Airport (by 2:00 PM)</li>
-              <li>4:15 PM — Flight OLB → BLQ</li>
-              <li>5:20 PM — Arrive Bologna · Check in to Airbnb</li>
-            </ul>
-          </div>
-          <div class="detail-section">
-            <div class="detail-label">Evening</div>
-            <ul class="detail-list">
-              <li>Drinks at Il Calice (Bourdain-featured Negroni spot)</li>
-              <li>Welcome dinner in Bologna</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+ <div class="day-card bologna" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">10</div><div class="dow">Mon</div></div>
+ <div class="day-info">
+ <div class="day-title">Sardinia → Bologna ✈️</div>
+ <div class="day-subtitle">August 10 · Travel day</div>
+ <div class="day-pills"><span class="pill flight">✈️ OLB→BLQ</span><span class="pill food">🍸 Il Calice</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <div class="detail-section">
+ <div class="detail-label">Schedule</div>
+ <ul class="detail-list">
+ <li>Check out of Sardinia Airbnb (10:00 AM)</li>
+ <li>🛒 Visit Cannigione Market on the way out</li>
+ <li>Drop off rental car at OLB Airport (by 2:00 PM)</li>
+ <li>4:15 PM — Flight OLB → BLQ</li>
+ <li>5:20 PM — Arrive Bologna · BLQ airport → Airbnb <span class="dist-badge">📍 ~30 min taxi/bus</span> · Check in</li>
+ </ul>
+ </div>
+ <div class="detail-section">
+ <div class="detail-label">Evening</div>
+ <ul class="detail-list">
+ <li>Drinks at Il Calice (Bourdain-featured Negroni spot) <span class="dist-badge">📍 ~10 min walk</span></li>
+ <li>Welcome dinner in Bologna</li>
+ </ul>
+ </div>
+ </div>
+ </div>
 
-      <div class="day-card bologna" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">11</div><div class="dow">Tue</div></div>
-          <div class="day-info">
-            <div class="day-title">Bologna Markets + Pasta Class 🍝</div>
-            <div class="day-subtitle">August 11 · Bologna</div>
-            <div class="day-pills"><span class="pill activity">🏛️ Markets</span><span class="pill food">🍳 Pasta Class</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>Explore Bologna markets</li>
-            <li>6:00 PM — Pasta Making Class · <strong>Viale Abramo Lincoln, 56, 40139 Bologna</strong> · ~10–15 min drive from Airbnb</li>
-          </ul>
-          <div class="note-box">💡 Option: Bologna Food Tour 10 AM (~$120/pp) — <a href="https://www.tastebologna.net/classic-bologna" target="_blank" style="color:inherit">tastebologna.net</a></div>
-        </div>
-      </div>
+ <div class="day-card bologna" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">11</div><div class="dow">Tue</div></div>
+ <div class="day-info">
+ <div class="day-title">Bologna Markets + Pasta Class 🍝</div>
+ <div class="day-subtitle">August 11 · Bologna</div>
+ <div class="day-pills"><span class="pill activity">🏛️ Markets</span><span class="pill food">🍳 Pasta Class</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>Explore Bologna markets</li>
+ <li>6:00 PM — Pasta Making Class · Viale Abramo Lincoln 56 <span class="dist-badge">📍 ~15 min drive</span></li>
+ </ul>
+ <div class="note-box">💡 Option: Bologna Food Tour 10 AM (~$120/pp) — <a href="https://www.tastebologna.net/classic-bologna" target="_blank" style="color:inherit">tastebologna.net</a></div>
+ </div>
+ </div>
 
-      <div class="day-card bologna" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">12</div><div class="dow">Wed</div></div>
-          <div class="day-info">
-            <div class="day-title">Day Trip: Parma 🧀</div>
-            <div class="day-subtitle">August 12 · Parmigiano + Prosciutto</div>
-            <div class="day-pills"><span class="pill train">🚂 Train (Booked)</span><span class="pill food">🧀 Food Tour</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>7:18 AM — Train to Parma (arrives 8:15 AM) ✅ booked</li>
-            <li>8:30 AM — Start time in Parma</li>
-            <li>Parmigiano-Reggiano + Prosciutto di Parma experience</li>
-            <li>Dinner and Lambrusco in Parma</li>
-            <li>Train back to Bologna: TBD</li>
-          </ul>
-          
-        </div>
-      </div>
+ <div class="day-card bologna" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">12</div><div class="dow">Wed</div></div>
+ <div class="day-info">
+ <div class="day-title">Day Trip: Parma 🧀</div>
+ <div class="day-subtitle">August 12 · Parmigiano + Prosciutto</div>
+ <div class="day-pills"><span class="pill train">🚂 Train (Booked)</span><span class="pill food">🧀 Food Tour</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>7:18 AM — Train to Parma (arrives 8:15 AM) booked · Bologna Centrale <span class="dist-badge">📍 ~8 min walk</span></li>
+ <li>8:30 AM — Start time in Parma</li>
+ <li>Parmigiano-Reggiano + Prosciutto di Parma experience</li>
+ <li>Dinner and Lambrusco in Parma</li>
+ <li>Train back to Bologna: TBD</li>
+ </ul>
+ 
+ </div>
+ </div>
 
-      <div class="day-card bologna" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">13</div><div class="dow">Thu</div></div>
-          <div class="day-info">
-            <div class="day-title">Bologna Free Day 🍝</div>
-            <div class="day-subtitle">August 13 · Explore the city</div>
-            <div class="day-pills"><span class="pill">🚶 Bologna</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>Emma joins! 🎉</li>
-            <li>Explore Bologna at your own pace</li>
-            <li>Wander the porticos, Piazza Maggiore, Quadrilatero market</li>
-            <li>Lunch and dinner TBD</li>
-          </ul>
-        </div>
-      </div>
+ <div class="day-card bologna" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">13</div><div class="dow">Thu</div></div>
+ <div class="day-info">
+ <div class="day-title">Bologna Free Day 🍝</div>
+ <div class="day-subtitle">August 13 · Explore the city</div>
+ <div class="day-pills"><span class="pill">🚶 Bologna</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>Emma joins! 🎉</li>
+ <li>Explore Bologna at your own pace</li>
+ <li>Wander the porticos, Piazza Maggiore, Quadrilatero market <span class="dist-badge">📍 ~10 min walk</span></li>
+ <li>Lunch and dinner TBD</li>
+ </ul>
+ </div>
+ </div>
 
-      <div class="day-card bologna" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">14</div><div class="dow">Fri</div></div>
-          <div class="day-info">
-            <div class="day-title">Dinner w/ Nate &amp; Gabby 🍽️</div>
-            <div class="day-subtitle">August 14 · Modena · Trattoria Aldina</div>
-            <div class="day-pills"><span class="pill train">🚂 Train</span><span class="pill special">🍽️ Nate &amp; Gabby</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>Train to Modena: TBD</li>
-            <li>Dinner with Nate &amp; Gabby at Trattoria Aldina</li>
-            <li>Train back to Bologna: TBD</li>
-          </ul>
-          
-        </div>
-      </div>
+ <div class="day-card bologna" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">14</div><div class="dow">Fri</div></div>
+ <div class="day-info">
+ <div class="day-title">Dinner w/ Nate &amp; Gabby 🍽️</div>
+ <div class="day-subtitle">August 14 · Modena · Trattoria Aldina</div>
+ <div class="day-pills"><span class="pill train">🚂 Train</span><span class="pill special">🍽️ Nate &amp; Gabby</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>Train to Modena · Bologna Centrale <span class="dist-badge">📍 ~8 min walk</span> · ~25 min train</li>
+ <li>Dinner with Nate &amp; Gabby at Trattoria Aldina</li>
+ <li>Train back to Bologna: TBD</li>
+ </ul>
+ 
+ </div>
+ </div>
 
-    </div><!-- end days-column -->
-    <div class="acc-sidebar">
-      <div class="accommodation-box">
-        <div class="acc-header">🏠 Airbnb — Bologna</div>
-        <div class="acc-name">Via Giovanni Livraghi, 1, Bologna</div>
-        <div class="acc-detail">
-          Check-in: <strong>3 PM, Aug 10</strong><br>
-          Check-out: <strong>11 AM, Aug 15</strong><br>
-          Cancel free before Aug 5<br>
-          <span class="conf-code">HMYM5PHAF2</span>
-        </div>
-      </div>
-    </div>
-  </div>
+ </div><!-- end days-column -->
+ <div class="acc-sidebar">
+ <div class="accommodation-box">
+ <div class="acc-header">🏠 Airbnb — Bologna</div>
+ <div class="acc-name">Via Giovanni Livraghi, 1, Bologna</div>
+ <div class="acc-detail">
+ Check-in: <strong>3 PM, Aug 10</strong><br>
+ Check-out: <strong>11 AM, Aug 15</strong><br>
+ Cancel free before Aug 5<br>
+ <span class="conf-code">HMYM5PHAF2</span>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <!-- ======= SIROLO ======= -->
-  <div class="section-header" id="sirolo">
-    <div class="section-badge" style="background:var(--sirolo-light);color:var(--sirolo);">🌊 Sirolo</div>
-    <div class="section-line"></div>
-    <div class="section-nights">Aug 15–17 · 3 nights · Terramarina Boutique Hotel + Spa</div>
-  </div>
-  <div class="section-layout">
-    <div class="days-column">
+ <!-- ======= SIROLO ======= -->
+ <div class="section-header" id="sirolo">
+ <div class="section-badge" style="background:var(--sirolo-light);color:var(--sirolo);">🌊 Sirolo</div>
+ <div class="section-line"></div>
+ <div class="section-nights">Aug 15–17 · 3 nights · Terramarina Boutique Hotel + Spa</div>
+ </div>
+ <div class="section-layout">
+ <div class="days-column">
 
-      <div class="day-card sirolo" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">15</div><div class="dow">Sat</div></div>
-          <div class="day-info">
-            <div class="day-title">Bologna → Sirolo 🚗</div>
-            <div class="day-subtitle">August 15 · Ferragosto · Check in to Terramarina</div>
-            <div class="day-pills"><span class="pill travel">🚗 Rental Car</span><span class="pill special">🎉 Ferragosto</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <div class="detail-section">
-            <div class="detail-label">Travel</div>
-            <ul class="detail-list">
-              <li>Head to Bologna Airport · pick up rental car</li>
-              <li>12:00 PM — Drive to Sirolo (2.5 hrs)</li>
-              <li>3:00 PM — Check in to Terramarina Boutique Hotel</li>
-            </ul>
-          </div>
-          <div class="detail-section">
-            <div class="detail-label">Evening</div>
-            <ul class="detail-list">
-              <li>Explore Sirolo town</li>
-              <li>🎉 Ferragosto festivities — national holiday!</li>
-              <li>Dinner: TBD</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+ <div class="day-card sirolo" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">15</div><div class="dow">Sat</div></div>
+ <div class="day-info">
+ <div class="day-title">Bologna → Sirolo 🚗</div>
+ <div class="day-subtitle">August 15 · Ferragosto · Check in to Terramarina</div>
+ <div class="day-pills"><span class="pill travel">🚗 Rental Car</span><span class="pill special">🎉 Ferragosto</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <div class="detail-section">
+ <div class="detail-label">Travel</div>
+ <ul class="detail-list">
+ <li>Head to Bologna Airport · pick up rental car</li>
+ <li>12:00 PM — Drive to Sirolo <span class="dist-badge">📍 ~2.5 hr drive</span></li>
+ <li>3:00 PM — Check in to Terramarina Boutique Hotel</li>
+ </ul>
+ </div>
+ <div class="detail-section">
+ <div class="detail-label">Evening</div>
+ <ul class="detail-list">
+ <li>Explore Sirolo town</li>
+ <li>🎉 Ferragosto festivities — national holiday!</li>
+ <li>Dinner: TBD</li>
+ </ul>
+ </div>
+ </div>
+ </div>
 
-      <div class="day-card sirolo" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">16</div><div class="dow">Sun</div></div>
-          <div class="day-info">
-            <div class="day-title">Beach + Dancing 🌊</div>
-            <div class="day-subtitle">August 16 · Sirolo · Hotel Disco</div>
-            <div class="day-pills"><span class="pill">🏖️ Beach</span><span class="pill activity">🎶 Hotel Disco</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>Beach day on the Adriatic 🏖️</li>
-            <li>Rachel and Carlo join! 🎉</li>
-            <li>Dinner: TBD</li>
-            <li>Dancing at Hotel Disco 🕺</li>
-          </ul>
-        </div>
-      </div>
+ <div class="day-card sirolo" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">16</div><div class="dow">Sun</div></div>
+ <div class="day-info">
+ <div class="day-title">Beach + Dancing 🌊</div>
+ <div class="day-subtitle">August 16 · Sirolo · Hotel Disco</div>
+ <div class="day-pills"><span class="pill">🏖️ Beach</span><span class="pill activity">🎶 Hotel Disco</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>Beach day on the Adriatic 🏖️ <span class="dist-badge">📍 walkable from hotel</span></li>
+ <li>Rachel and Carlo join! 🎉</li>
+ <li>Dinner: TBD</li>
+ <li>Dancing at Hotel Disco 🕺 <span class="dist-badge">📍 walkable from hotel</span></li>
+ </ul>
+ </div>
+ </div>
 
-      <div class="day-card sirolo" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">17</div><div class="dow">Mon</div></div>
-          <div class="day-info">
-            <div class="day-title">Spa Day 💆</div>
-            <div class="day-subtitle">August 17 · San Michele Spa</div>
-            <div class="day-pills"><span class="pill">💆 Spa</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>2:00 PM — Check out of hotel · check into San Michele Spa</li>
-            <li>Spa day at San Michele 💆‍♀️</li>
-            <li>Dinner: TBD</li>
-          </ul>
-        </div>
-      </div>
+ <div class="day-card sirolo" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">17</div><div class="dow">Mon</div></div>
+ <div class="day-info">
+ <div class="day-title">Spa Day 💆</div>
+ <div class="day-subtitle">August 17 · San Michele Spa</div>
+ <div class="day-pills"><span class="pill">💆 Spa</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>2:00 PM — Check out of hotel · check into San Michele Spa</li>
+ <li>Spa day at San Michele 💆‍♀️</li>
+ <li>Dinner: TBD</li>
+ </ul>
+ </div>
+ </div>
 
-    </div><!-- end days-column -->
-    <div class="acc-sidebar">
-      <div class="accommodation-box">
-        <div class="acc-header">🏨 Hotel — Sirolo</div>
-        <div class="acc-name">Terramarina Boutique Hotel</div>
-        <div class="acc-detail">
-          Check-in: <strong>Sat Aug 15, 3 PM</strong><br>
-          Check-out: <strong>Mon Aug 17, 2 PM</strong>
-        </div>
-      </div>
-      <div class="accommodation-box">
-        <div class="acc-header">💆 Spa — Sirolo</div>
-        <div class="acc-name">San Michele Spa</div>
-        <div class="acc-detail">
-          Check-in: <strong>Mon Aug 17, 2 PM</strong><br>
-          Check-out: <strong>Tue Aug 18</strong>
-        </div>
-      </div>
-      <div class="accommodation-box">
-        <div class="acc-header">🚗 Rental Car</div>
-        <div class="acc-name">Bologna Airport Pickup</div>
-        <div class="acc-detail">
-          Pick-up: <strong>Sat Aug 15</strong><br>
-          Return: <strong>Rome (Aug 18)</strong><br>
-          <span class="conf-code">L64526589C3</span>
-        </div>
-      </div>
-    </div>
-  </div>
+ </div><!-- end days-column -->
+ <div class="acc-sidebar">
+ <div class="accommodation-box">
+ <div class="acc-header">🏨 Hotel — Sirolo</div>
+ <div class="acc-name">Terramarina Boutique Hotel</div>
+ <div class="acc-detail">
+ Check-in: <strong>Sat Aug 15, 3 PM</strong><br>
+ Check-out: <strong>Mon Aug 17, 2 PM</strong>
+ </div>
+ </div>
+ <div class="accommodation-box">
+ <div class="acc-header">💆 Spa — Sirolo</div>
+ <div class="acc-name">San Michele Spa</div>
+ <div class="acc-detail">
+ Check-in: <strong>Mon Aug 17, 2 PM</strong><br>
+ Check-out: <strong>Tue Aug 18</strong>
+ </div>
+ </div>
+ <div class="accommodation-box">
+ <div class="acc-header">🚗 Rental Car</div>
+ <div class="acc-name">Bologna Airport Pickup</div>
+ <div class="acc-detail">
+ Pick-up: <strong>Sat Aug 15</strong><br>
+ Return: <strong>Rome (Aug 18)</strong><br>
+ <span class="conf-code">L64526589C3</span>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <!-- ======= ROME ======= -->
-  <div class="section-header" id="rome">
-    <div class="section-badge" style="background:var(--rome-light);color:var(--rome);">🏛️ Rome</div>
-    <div class="section-line"></div>
-    <div class="section-nights">Aug 18–21 · 3 nights · Hotel Nerva</div>
-  </div>
-  <div class="section-layout">
-    <div class="days-column">
+ <!-- ======= ROME ======= -->
+ <div class="section-header" id="rome">
+ <div class="section-badge" style="background:var(--rome-light);color:var(--rome);">🏛️ Rome</div>
+ <div class="section-line"></div>
+ <div class="section-nights">Aug 18–21 · 3 nights · Hotel Nerva</div>
+ </div>
+ <div class="section-layout">
+ <div class="days-column">
 
-      <div class="day-card rome" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">18</div><div class="dow">Tue</div></div>
-          <div class="day-info">
-            <div class="day-title">Sirolo → Rome 🚗</div>
-            <div class="day-subtitle">August 18 · Drive from Adriatic · Cacio e Pepe dinner</div>
-            <div class="day-pills"><span class="pill travel">🚗 Drive ~3.5 hrs</span><span class="pill food">🍝 Roma Sparita</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>Check out of San Michele Spa</li>
-            <li>Drive Sirolo → Rome (~3.5 hrs) · stop along the way TBD</li>
-            <li>Return rental car in Rome</li>
-            <li>Check in to Hotel Nerva (Monti neighborhood)</li>
-            <li>🍝 Dinner at <a href="https://www.romasparita.com/en/" target="_blank" style="color:inherit">Ristorante Roma Sparita</a> — Bourdain&rsquo;s pick for best Cacio e Pepe · Piazza di Santa Cecilia, 24, Trastevere</li>
-          </ul>
-        </div>
-      </div>
+ <div class="day-card rome" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">18</div><div class="dow">Tue</div></div>
+ <div class="day-info">
+ <div class="day-title">Sirolo → Rome 🚗</div>
+ <div class="day-subtitle">August 18 · Drive from Adriatic · Cacio e Pepe dinner</div>
+ <div class="day-pills"><span class="pill travel">🚗 Drive ~3.5 hrs</span><span class="pill food">🍝 Roma Sparita</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>Check out of San Michele Spa</li>
+ <li>Drive Sirolo → Rome <span class="dist-badge">📍 ~3.5 hr drive</span></li>
+ <li>Return rental car in Rome</li>
+ <li>Check in to Hotel Nerva (Monti neighborhood)</li>
+ <li>🍝 Dinner at <a href="https://www.romasparita.com/en/" target="_blank" style="color:inherit">Ristorante Roma Sparita</a> · Trastevere <span class="dist-badge">📍 ~30 min walk / 15 min cab</span></li>
+ </ul>
+ </div>
+ </div>
 
-      <div class="day-card rome" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">19</div><div class="dow">Wed</div></div>
-          <div class="day-info">
-            <div class="day-title">Nora Flies Home + Heather Work Day 🏛️</div>
-            <div class="day-subtitle">August 19 · Nora departs · Heather WFH + Sightseeing</div>
-            <div class="day-pills"><span class="pill flight">✈️ FCO → BOS</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>1:10 PM — Nora departs FCO on Delta flight</li>
-            <li>Explore Rome solo — Colosseum, Roman Forum, Palatine Hill</li>
-            <li>Dinner in Monti neighborhood</li>
-          </ul>
-        </div>
-      </div>
+ <div class="day-card rome" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">19</div><div class="dow">Wed</div></div>
+ <div class="day-info">
+ <div class="day-title">Nora Flies Home + Heather Work Day 🏛️</div>
+ <div class="day-subtitle">August 19 · Nora departs · Heather WFH + Sightseeing</div>
+ <div class="day-pills"><span class="pill flight">✈️ FCO → BOS</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>1:10 PM — Nora departs FCO on Delta flight</li>
+ <li>Colosseum <span class="dist-badge">📍 ~2 min walk</span> · Roman Forum &amp; Palatine Hill <span class="dist-badge">📍 ~5 min walk</span></li>
+ <li>Dinner in Monti neighborhood</li>
+ </ul>
+ </div>
+ </div>
 
-      <div class="day-card rome" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">20</div><div class="dow">Thu</div></div>
-          <div class="day-info">
-            <div class="day-title">Heather Work Day + Sightseeing 🕍</div>
-            <div class="day-subtitle">August 20 · Vatican Museums, Trevi Fountain · Heather WFH</div>
-            <div class="day-pills"><span class="pill">⛪ Vatican</span><span class="pill">⛲ Trevi</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>Vatican Museums &amp; Sistine Chapel</li>
-            <li>St. Peter&rsquo;s Basilica</li>
-            <li>Trevi Fountain &amp; Piazza Navona</li>
-            <li>Pantheon</li>
-          </ul>
-        </div>
-      </div>
+ <div class="day-card rome" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">20</div><div class="dow">Thu</div></div>
+ <div class="day-info">
+ <div class="day-title">Heather Work Day + Sightseeing 🕍</div>
+ <div class="day-subtitle">August 20 · Vatican Museums, Trevi Fountain · Heather WFH</div>
+ <div class="day-pills"><span class="pill">⛪ Vatican</span><span class="pill">⛲ Trevi</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>Vatican Museums &amp; Sistine Chapel <span class="dist-badge">📍 ~40 min walk / 15 min bus</span></li>
+ <li>Trevi Fountain <span class="dist-badge">📍 ~10 min walk</span> · Piazza Navona <span class="dist-badge">📍 ~15 min walk</span></li>
+ <li>Pantheon <span class="dist-badge">📍 ~15 min walk</span></li>
+ </ul>
+ </div>
+ </div>
 
-    </div><!-- end days-column -->
-    <div class="acc-sidebar">
-      <div class="accommodation-box">
-        <div class="acc-header">🏨 Hotel — Rome</div>
-        <div class="acc-name">Hotel Nerva</div>
-        <div class="acc-detail">
-          Check-in: <strong>Tue Aug 18, after 1:00 PM</strong><br>
-          Check-out: <strong>Fri Aug 21, by 10:30 AM</strong><br>
-          <em>Monti neighborhood</em><br>
-          <span class="conf-code">7620260709203442084</span>
-        </div>
-      </div>
-    </div>
-  </div>
+ </div><!-- end days-column -->
+ <div class="acc-sidebar">
+ <div class="accommodation-box">
+ <div class="acc-header">🏨 Hotel — Rome</div>
+ <div class="acc-name">Hotel Nerva</div>
+ <div class="acc-detail">
+ Check-in: <strong>Tue Aug 18, after 1:00 PM</strong><br>
+ Check-out: <strong>Fri Aug 21, by 10:30 AM</strong><br>
+ <em>Monti neighborhood</em><br>
+ <span class="conf-code">7620260709203442084</span>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <!-- ======= FLORENCE UNH CREW ======= -->
-  <div class="section-header" id="florence">
-    <div class="section-badge" style="background:var(--florence-light);color:var(--florence);">🌸 Florence</div>
-    <div class="section-line"></div>
-    <div class="section-nights">Aug 21–23 · 3 nights · UNH Crew</div>
-  </div>
-  <div class="section-layout">
-    <div class="days-column">
+ <!-- ======= FLORENCE UNH CREW ======= -->
+ <div class="section-header" id="florence">
+ <div class="section-badge" style="background:var(--florence-light);color:var(--florence);">🌸 Florence</div>
+ <div class="section-line"></div>
+ <div class="section-nights">Aug 21–23 · 3 nights · UNH Crew</div>
+ </div>
+ <div class="section-layout">
+ <div class="days-column">
 
-      <div class="day-card florence" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">21</div><div class="dow">Fri</div></div>
-          <div class="day-info">
-            <div class="day-title">Rome → Florence + UNH Crew Arrives! 🎉</div>
-            <div class="day-subtitle">August 21 · Travel day · Friends arrive</div>
-            <div class="day-pills"><span class="pill train">🚄 Frecciarossa 9414 ✅</span><span class="pill special">🎉 Friends arrive</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>Check out of Hotel Nerva (by 10:30 AM)</li>
-            <li>9:05 AM — Frecciarossa 9414 departs Rome Termini</li>
-            <li>11:11 AM — Arrive Florence S. M. Novella</li>
-            <li>Coach 4 · Seat 9A · Economy Premium · Retrieval code: 1845664083</li>
-            <li>UNH crew arrives in Florence</li>
-            <li>3:00 PM — Check in to Costa dei Magnoli Airbnb</li>
-          </ul>
-        </div>
-      </div>
+ <div class="day-card florence" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">21</div><div class="dow">Fri</div></div>
+ <div class="day-info">
+ <div class="day-title">Rome → Florence + UNH Crew Arrives! 🎉</div>
+ <div class="day-subtitle">August 21 · Travel day · Friends arrive</div>
+ <div class="day-pills"><span class="pill train">🚄 Frecciarossa 9414 </span><span class="pill special">🎉 Friends arrive</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>Check out of Hotel Nerva (by 10:30 AM)</li>
+ <li>9:05 AM — Frecciarossa 9414 departs Rome Termini</li>
+ <li>11:11 AM — Arrive Florence S. M. Novella · SMN → Airbnb <span class="dist-badge">📍 ~15 min walk / 5 min cab</span></li>
+ <li>Coach 4 · Seat 9A · Economy Premium · Retrieval code: 1845664083</li>
+ <li>UNH crew arrives in Florence</li>
+ <li>3:00 PM — Check in to Costa dei Magnoli Airbnb</li>
+ <li>7:00 PM — Dinner at <strong>La Buchetta</strong> · Via dei Benci 3 🍽️ <span class="dist-badge">📍 ~5 min walk</span></li>
+ </ul>
+ </div>
+ </div>
 
-      <div class="day-card florence" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">22</div><div class="dow">Sat</div></div>
-          <div class="day-info">
-            <div class="day-title">Florence 🌸</div>
-            <div class="day-subtitle">August 22 · Explore with the crew</div>
-            <div class="day-pills"><span class="pill activity">🏛️ Explore</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list"><li>TBD with UNH crew</li></ul>
-        </div>
-      </div>
+ <div class="day-card florence" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">22</div><div class="dow">Sat</div></div>
+ <div class="day-info">
+ <div class="day-title">Florence 🌸</div>
+ <div class="day-subtitle">August 22 · Explore with the crew</div>
+ <div class="day-pills"><span class="pill activity">🏛️ Explore</span><span class="pill special"> ZàZà Dinner</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>TBD with UNH crew</li>
+ <li>8:00 PM — Dinner at <strong>Trattoria ZàZà</strong> · Piazza del Mercato Centrale 26R <span class="dist-badge">📍 ~25 min walk / 10 min cab</span> · party of 5 </li>
+ <li>Reservation code: <span class="conf-code-hidden" onclick="revealCode(this)" title="Click to reveal"><span class="code-label">🔒 show code</span><span class="code-revealed">485866</span></span> · <a href="mailto:hcbrooks21@gmail.com" style="color:inherit">hcbrooks21@gmail.com</a></li>
+ </ul>
+ </div>
+ </div>
 
-      <div class="day-card florence" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">23</div><div class="dow">Sun</div></div>
-          <div class="day-info">
-            <div class="day-title">Florence 🌸</div>
-            <div class="day-subtitle">August 23 · Last night in Florence</div>
-            <div class="day-pills"><span class="pill activity">🏛️ Explore</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>TBD with UNH crew</li>
-            <li>Pack up — moving to Chianti tomorrow</li>
-          </ul>
-          <div class="note-box">⚠️ Need to book car rental for Chianti</div>
-        </div>
-      </div>
+ <div class="day-card florence" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">23</div><div class="dow">Sun</div></div>
+ <div class="day-info">
+ <div class="day-title">Duomo + Farewell Dinner 🏛️</div>
+ <div class="day-subtitle">August 23 · Last night in Florence</div>
+ <div class="day-pills"><span class="pill activity">🏛️ Duomo</span><span class="pill special">🍽️ Il Morellino</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>2:15 PM — <strong>Duomo</strong> (Santa Maria del Fiore) <span class="dist-badge">📍 ~20 min walk</span></li>
+ <li>7:00 PM — Dinner at <strong>Ristorante Il Morellino</strong> · Via del Parione 26R <span class="dist-badge">📍 ~12 min walk</span></li>
+ <li>Pack up — moving to Chianti tomorrow</li>
+ </ul>
+ <div class="note-box">⚠️ Need to book car rental for Chianti</div>
+ </div>
+ </div>
 
-    </div><!-- end days-column -->
-    <div class="acc-sidebar">
-      <div class="accommodation-box">
-        <div class="acc-header">🏠 Airbnb — Florence</div>
-        <div class="acc-name">Costa dei Magnoli, 30, Florence 50125</div>
-        <div class="acc-detail">
-          Check-in: <strong>3 PM, Fri Aug 21</strong><br>
-          Check-out: <strong>10 AM, Mon Aug 24</strong><br>
-          <span class="conf-code">HMRZESHKTJ</span>
-        </div>
-      </div>
-    </div>
-  </div>
+ </div><!-- end days-column -->
+ <div class="acc-sidebar">
+ <div class="accommodation-box">
+ <div class="acc-header">🏠 Airbnb — Florence</div>
+ <div class="acc-name">Costa dei Magnoli, 30, Florence 50125</div>
+ <div class="acc-detail">
+ Check-in: <strong>3 PM, Fri Aug 21</strong><br>
+ Check-out: <strong>10 AM, Mon Aug 24</strong><br>
+ <span class="conf-code">HMRZESHKTJ</span>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <!-- ======= CHIANTI ======= -->
-  <div class="section-header" id="chianti">
-    <div class="section-badge" style="background:var(--chianti-light);color:var(--chianti);">🍷 Chianti</div>
-    <div class="section-line"></div>
-    <div class="section-nights">Aug 24–27 · 4 nights</div>
-  </div>
-  <div class="section-layout">
-    <div class="days-column">
+ <!-- ======= CHIANTI ======= -->
+ <div class="section-header" id="chianti">
+ <div class="section-badge" style="background:var(--chianti-light);color:var(--chianti);">🍷 Chianti</div>
+ <div class="section-line"></div>
+ <div class="section-nights">Aug 24–27 · 4 nights</div>
+ </div>
+ <div class="section-layout">
+ <div class="days-column">
 
-      <div class="day-card chianti" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">24</div><div class="dow">Mon</div></div>
-          <div class="day-info">
-            <div class="day-title">Florence → Chianti 🍷</div>
-            <div class="day-subtitle">August 24</div>
-            <div class="day-pills"><span class="pill car">🚗 Rental Car</span><span class="pill todo">📋 Book car</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>Drive from Florence to Chianti — need to rent a car</li>
-            <li>4:00 PM — Check in to Airbnb</li>
-          </ul>
-          <div class="note-box">⚠️ Need to book car rental for this leg</div>
-        </div>
-      </div>
+ <div class="day-card chianti" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">24</div><div class="dow">Mon</div></div>
+ <div class="day-info">
+ <div class="day-title">Florence → Chianti 🍷</div>
+ <div class="day-subtitle">August 24</div>
+ <div class="day-pills"><span class="pill car">🚗 Rental Car</span><span class="pill special"> L'Antica Scuderia</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>Mary and Mike to pick up rental car · drive to Chianti <span class="dist-badge">📍 ~1 hr drive</span></li>
+ <li>4:00 PM — Check in to Airbnb</li>
+ <li>7:30 PM — Dinner at <strong>L'Antica Scuderia</strong> · Via Passignano 17, Tavarnelle Val di Pesa <span class="dist-badge">📍 ~27 min drive</span> · party of 7 </li>
+ </ul>
+ 
+ </div>
+ </div>
 
-      <div class="day-card chianti" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">25</div><div class="dow">Tue</div></div>
-          <div class="day-info">
-            <div class="day-title">Chianti 🍷</div>
-            <div class="day-subtitle">August 25</div>
-            <div class="day-pills"><span class="pill activity">🍷 Wine Country</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body"><ul class="detail-list"><li>TBD</li></ul></div>
-      </div>
+ <div class="day-card chianti" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">25</div><div class="dow">Tue</div></div>
+ <div class="day-info">
+ <div class="day-title">Cooking Class 🍝</div>
+ <div class="day-subtitle">August 25 · Chianti</div>
+ <div class="day-pills"><span class="pill activity">👨‍🍳 Cooking Class</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>11:30 AM — Cooking class begins · 4 hours</li>
+ <li><span class="dist-badge">📍 ~15 min drive from villa</span></li>
+ </ul>
+ </div>
+ </div>
 
-      <div class="day-card chianti" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">26</div><div class="dow">Wed</div></div>
-          <div class="day-info">
-            <div class="day-title">Chianti 🍷</div>
-            <div class="day-subtitle">August 26</div>
-            <div class="day-pills"><span class="pill activity">🍷 Wine Country</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body"><ul class="detail-list"><li>TBD</li></ul></div>
-      </div>
+ <div class="day-card chianti" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">26</div><div class="dow">Wed</div></div>
+ <div class="day-info">
+ <div class="day-title">Casaloste Wine Tour 🍷</div>
+ <div class="day-subtitle">August 26 · Panzano in Chianti</div>
+ <div class="day-pills"><span class="pill activity">🍷 Casaloste Winery </span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>11:30 AM — <a href="https://www.casaloste.com/en/" target="_blank" style="color:inherit">Casaloste Winery</a> tour &amp; tasting · ~2 hours</li>
+ <li>Via Montagliari 32, Panzano in Chianti <span class="dist-badge">📍 ~15 min drive</span></li>
+ <li>4 wines + EVOO + Grappa tasting · €60/pp (~$66)</li>
+ </ul>
+ </div>
+ </div>
 
-      <div class="day-card chianti" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">27</div><div class="dow">Thu</div></div>
-          <div class="day-info">
-            <div class="day-title">Chianti 🍷</div>
-            <div class="day-subtitle">August 27 · Last night — early flight tomorrow!</div>
-            <div class="day-pills"><span class="pill activity">🍷 Wine Country</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>TBD</li>
-            <li>Pack up — 10:30 AM flight from Pisa tomorrow</li>
-          </ul>
-          <div class="note-box">⚠️ Book car service to Pisa Airport — Airbnb transfer quoted $350</div>
-        </div>
-      </div>
+ <div class="day-card chianti" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">27</div><div class="dow">Thu</div></div>
+ <div class="day-info">
+ <div class="day-title">Chianti 🍷</div>
+ <div class="day-subtitle">August 27 · Last night — early flight tomorrow!</div>
+ <div class="day-pills"><span class="pill activity">🍷 Wine Country</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>TBD</li>
+ <li>Pack up — 10:30 AM flight from Pisa tomorrow</li>
+ </ul>
+ 
+ </div>
+ </div>
 
-    </div><!-- end days-column -->
-    <div class="acc-sidebar">
-      <div class="accommodation-box">
-        <div class="acc-header">🏠 Airbnb — Chianti</div>
-        <div class="acc-name">Località San Leolino, 33, Greve in Chianti 50022</div>
-        <div class="acc-detail">
-          Check-in: <strong>4 PM, Mon Aug 24</strong><br>
-          Check-out: <strong>11 AM, Fri Aug 28</strong><br>
-          <span class="conf-code">HM5HMSSRYX</span>
-        </div>
-      </div>
-    </div>
-  </div>
+ </div><!-- end days-column -->
+ <div class="acc-sidebar">
+ <div class="accommodation-box">
+ <div class="acc-header">🏠 Airbnb — Chianti</div>
+ <div class="acc-name">Località San Leolino, 33, Greve in Chianti 50022</div>
+ <div class="acc-detail">
+ Check-in: <strong>4 PM, Mon Aug 24</strong><br>
+ Check-out: <strong>11 AM, Fri Aug 28</strong><br>
+ <span class="conf-code">HM5HMSSRYX</span>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <!-- ======= ENGLAND ======= -->
-  <div class="section-header" id="england">
-    <div class="section-badge" style="background:var(--england-light);color:var(--england);">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</div>
-    <div class="section-line"></div>
-    <div class="section-nights">Aug 28–29 · 2 nights · Manchester</div>
-  </div>
-  <div class="section-layout">
-    <div class="days-column">
+ <!-- ======= ENGLAND ======= -->
+ <div class="section-header" id="england">
+ <div class="section-badge" style="background:var(--england-light);color:var(--england);">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</div>
+ <div class="section-line"></div>
+ <div class="section-nights">Aug 28–29 · 2 nights · Manchester</div>
+ </div>
+ <div class="section-layout">
+ <div class="days-column">
 
-      <div class="day-card england" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">28</div><div class="dow">Fri</div></div>
-          <div class="day-info">
-            <div class="day-title">Pisa → Manchester ✈️</div>
-            <div class="day-subtitle">August 28 · Jet2 LS884</div>
-            <div class="day-pills"><span class="pill flight">✈️ LS884</span><span class="pill special">🚗 Transfer ✅</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>6:30 AM — Van pickup at Greve in Chianti (San Leolino) · Gabriel Simion, van&amp;minibus services ✅</li>
-            <li>10:30 AM — Flight Pisa (PSA) → Manchester (MAN), Jet2 LS884</li>
-            <li>Arrive Manchester</li>
-          </ul>
-          <div class="note-box">✅ Transfer booked — Gabriel Simion, van&amp;minibus services</div>
-        </div>
-      </div>
+ <div class="day-card england" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">28</div><div class="dow">Fri</div></div>
+ <div class="day-info">
+ <div class="day-title">Pisa → Manchester ✈️</div>
+ <div class="day-subtitle">August 28 · Jet2 LS884</div>
+ <div class="day-pills"><span class="pill flight">✈️ LS884</span><span class="pill special">🚗 Transfer </span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>6:30 AM — Van pickup at Greve in Chianti · Gabriel Simion <span class="dist-badge">📍 ~1 hr to Pisa airport</span></li>
+ <li>10:30 AM — Flight Pisa (PSA) → Manchester (MAN), Jet2 LS884</li>
+ <li>Arrive Manchester</li>
+ </ul>
+ <div class="note-box"> Transfer booked — Gabriel Simion, van&amp;minibus services</div>
+ </div>
+ </div>
 
-      <div class="day-card england" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">29</div><div class="dow">Sat</div></div>
-          <div class="day-info">
-            <div class="day-title">Manchester 🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
-            <div class="day-subtitle">August 29 · Last night away</div>
-            <div class="day-pills"><span class="pill activity">🇬🇧 Explore</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>TBD — explore Manchester!</li>
-            <li>Flight home tomorrow afternoon</li>
-          </ul>
-        </div>
-      </div>
+ <div class="day-card england" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">29</div><div class="dow">Sat</div></div>
+ <div class="day-info">
+ <div class="day-title">Manchester 🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+ <div class="day-subtitle">August 29 · Last night away</div>
+ <div class="day-pills"><span class="pill activity">🇬🇧 Explore</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>TBD — explore Manchester!</li>
+ <li>Flight home tomorrow afternoon</li>
+ </ul>
+ </div>
+ </div>
 
-    </div><!-- end days-column -->
-    <div class="acc-sidebar"><!-- TBD accommodation --></div>
-  </div>
+ </div><!-- end days-column -->
+ <div class="acc-sidebar"><!-- TBD accommodation --></div>
+ </div>
 
-  <!-- ======= RETURN HOME ======= -->
-  <div class="section-header" id="travel-home">
-    <div class="section-badge" style="background:#f3f4f6;color:#6b7280;">✈️ Home</div>
-    <div class="section-line"></div>
-  </div>
-  <div class="section-layout">
-    <div class="days-column">
-      <div class="day-card travel" onclick="toggleCard(this)">
-        <div class="day-header">
-          <div class="day-number"><div class="num">30</div><div class="dow">Sun</div></div>
-          <div class="day-info">
-            <div class="day-title">Manchester → New York ✈️</div>
-            <div class="day-subtitle">August 30 · Homeward bound</div>
-            <div class="day-pills"><span class="pill flight">✈️ DL5981</span></div>
-          </div>
-          <div class="chevron">▾</div>
-        </div>
-        <div class="day-body">
-          <ul class="detail-list">
-            <li>2:55 PM — Depart Manchester (MAN), Delta DL5981</li>
-            <li>5:45 PM — Arrive JFK</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="acc-sidebar"></div>
-  </div>
+ <!-- ======= RETURN HOME ======= -->
+ <div class="section-header" id="travel-home">
+ <div class="section-badge" style="background:#f3f4f6;color:#6b7280;">✈️ Home</div>
+ <div class="section-line"></div>
+ </div>
+ <div class="section-layout">
+ <div class="days-column">
+ <div class="day-card travel" onclick="toggleCard(this)">
+ <div class="day-header">
+ <div class="day-number"><div class="num">30</div><div class="dow">Sun</div></div>
+ <div class="day-info">
+ <div class="day-title">Manchester → New York ✈️</div>
+ <div class="day-subtitle">August 30 · Homeward bound</div>
+ <div class="day-pills"><span class="pill flight">✈️ DL5981</span></div>
+ </div>
+ <div class="chevron">▾</div>
+ </div>
+ <div class="day-body">
+ <ul class="detail-list">
+ <li>2:55 PM — Depart Manchester (MAN), Delta DL5981</li>
+ <li>5:45 PM — Arrive JFK</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ <div class="acc-sidebar"></div>
+ </div>
 
 </div><!-- end container -->
 
 <script>
-  function toggleCard(card) { card.classList.toggle('open'); }
+ function toggleCard(card) { card.classList.toggle('open'); }
 
-  function toggleTodo(checkbox) {
-    const item = checkbox.closest('label');
-    const textEls = item.querySelectorAll('div');
-    if (checkbox.checked) {
-      textEls.forEach(el => { el.style.textDecoration = 'line-through'; el.style.opacity = '0.4'; });
-    } else {
-      textEls.forEach(el => { el.style.textDecoration = ''; el.style.opacity = ''; });
-    }
-    const total = document.querySelectorAll('#todo-list input[type=checkbox]').length;
-    const done = document.querySelectorAll('#todo-list input[type=checkbox]:checked').length;
-    const remaining = total - done;
-    const prog = document.getElementById('todo-progress');
-    if (remaining === 0) { prog.textContent = '✅ All booked — you\'re all set!'; prog.style.color = '#15803d'; }
-    else { prog.textContent = remaining + ' item' + (remaining > 1 ? 's' : '') + ' remaining'; prog.style.color = '#a16207'; }
-  }
+ function toggleTodo(checkbox) {
+ const item = checkbox.closest('label');
+ const textEls = item.querySelectorAll('div');
+ if (checkbox.checked) {
+ textEls.forEach(el => { el.style.textDecoration = 'line-through'; el.style.opacity = '0.4'; });
+ } else {
+ textEls.forEach(el => { el.style.textDecoration = ''; el.style.opacity = ''; });
+ }
+ const total = document.querySelectorAll('#todo-list input[type=checkbox]').length;
+ const done = document.querySelectorAll('#todo-list input[type=checkbox]:checked').length;
+ const remaining = total - done;
+ const prog = document.getElementById('todo-progress');
+ if (remaining === 0) { prog.textContent = ' All booked — you\'re all set!'; prog.style.color = '#15803d'; }
+ else { prog.textContent = remaining + ' item' + (remaining > 1 ? 's' : '') + ' remaining'; prog.style.color = '#a16207'; }
+ }
 
-  function scrollToSection(id) {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
+ function scrollToSection(id) {
+ const el = document.getElementById(id);
+ if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+ }
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const correct = 'Italy2026HB';
-    const stored = sessionStorage.getItem('italy_auth');
-    if (stored !== correct) {
-      document.body.innerHTML = `
-        <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:#fafaf8;font-family:'Inter',sans-serif;">
-          <div style="background:white;border:1px solid #e5e7eb;border-radius:16px;padding:40px 48px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,0.08);max-width:360px;width:90%;">
-            <div style="font-size:40px;margin-bottom:12px;">🇮🇹</div>
-            <div style="font-family:'Georgia',serif;font-size:22px;font-weight:700;margin-bottom:6px;">Italy 2026</div>
-            <div style="font-size:13px;color:#9ca3af;margin-bottom:28px;">Enter the password to view the itinerary</div>
-            <input id="pw-input" type="password" placeholder="Password" onkeydown="if(event.key==='Enter')checkPw()" style="width:100%;padding:10px 14px;border:1.5px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none;margin-bottom:10px;box-sizing:border-box;">
-            <div id="pw-error" style="font-size:12px;color:#dc2626;min-height:18px;margin-bottom:8px;"></div>
-            <button onclick="checkPw()" style="width:100%;background:#1a1a2e;color:white;border:none;border-radius:8px;padding:11px;font-size:14px;font-weight:600;cursor:pointer;">Enter</button>
-          </div>
-        </div>`;
-    } else {
-      const firstCard = document.querySelector('.day-card');
-      if (firstCard) firstCard.classList.add('open');
-    }
-  });
+ document.addEventListener('DOMContentLoaded', () => {
+ const correct = 'Italy2026HB';
+ const stored = sessionStorage.getItem('italy_auth');
+ if (stored !== correct) {
+ document.body.innerHTML = `
+ <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:#fafaf8;font-family:'Inter',sans-serif;">
+ <div style="background:white;border:1px solid #e5e7eb;border-radius:16px;padding:40px 48px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,0.08);max-width:360px;width:90%;">
+ <div style="font-size:40px;margin-bottom:12px;">🇮🇹</div>
+ <div style="font-family:'Georgia',serif;font-size:22px;font-weight:700;margin-bottom:6px;">Italy 2026</div>
+ <div style="font-size:13px;color:#9ca3af;margin-bottom:28px;">Enter the password to view the itinerary</div>
+ <input id="pw-input" type="password" placeholder="Password" onkeydown="if(event.key==='Enter')checkPw()" style="width:100%;padding:10px 14px;border:1.5px solid #e5e7eb;border-radius:8px;font-size:14px;outline:none;margin-bottom:10px;box-sizing:border-box;">
+ <div id="pw-error" style="font-size:12px;color:#dc2626;min-height:18px;margin-bottom:8px;"></div>
+ <button onclick="checkPw()" style="width:100%;background:#1a1a2e;color:white;border:none;border-radius:8px;padding:11px;font-size:14px;font-weight:600;cursor:pointer;">Enter</button>
+ </div>
+ </div>`;
+ } else {
+ const firstCard = document.querySelector('.day-card');
+ if (firstCard) firstCard.classList.add('open');
+ }
+ });
 
-  function checkPw() {
-    const input = document.getElementById('pw-input').value;
-    if (input === 'Italy2026HB') {
-      sessionStorage.setItem('italy_auth', 'Italy2026HB');
-      location.reload();
-    } else {
-      document.getElementById('pw-error').textContent = 'Incorrect password — try again';
-      document.getElementById('pw-input').value = '';
-      document.getElementById('pw-input').focus();
-    }
-  }
+ function checkPw() {
+ const input = document.getElementById('pw-input').value;
+ if (input === 'Italy2026HB') {
+ sessionStorage.setItem('italy_auth', 'Italy2026HB');
+ location.reload();
+ } else {
+ document.getElementById('pw-error').textContent = 'Incorrect password — try again';
+ document.getElementById('pw-input').value = '';
+ document.getElementById('pw-input').focus();
+ }
+ }
 </script>
 </body>
 </html>
